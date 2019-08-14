@@ -5,12 +5,11 @@ using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
     public float speed;
-    
+
 
     void Update()
     {
         //Player Rotate to Mouse
-
         Plane PlayPlane = new Plane(Vector3.up, transform.position);
         Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
         float hitdistance = 0.0f;
@@ -26,8 +25,14 @@ public class MovementScript : MonoBehaviour
             }
 
         //Player Movement 
-
         if (Input.GetKey(KeyCode.W))
+        {
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        }
+            
+
+
+
     }
+
 }
