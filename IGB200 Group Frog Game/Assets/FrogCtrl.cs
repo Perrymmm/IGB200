@@ -36,6 +36,16 @@ public class FrogCtrl : MonoBehaviour
         {
             anim.Play("Idle");
         }
+
+        if (Input.GetKeyDown("q"))
+        {
+            anim.Play("Tongue");
+        }
+
+        if (Input.GetKeyDown("space"))
+        {
+            anim.Play("Jump");
+        }
     }
 
 
