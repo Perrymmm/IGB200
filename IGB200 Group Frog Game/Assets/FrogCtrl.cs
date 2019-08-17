@@ -46,6 +46,17 @@ public class FrogCtrl : MonoBehaviour
         {
             anim.Play("Jump");
         }
+
+
+    }
+    //NOt working ?????
+    void OnCollisionEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Water")
+        {
+            anim.Play("Swimming");
+            Debug.Log("Frog is Swimming");
+        }
     }
 
 

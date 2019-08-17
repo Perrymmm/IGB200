@@ -603,9 +603,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37a15db849591a4f836375250ce5e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraTarget: {fileID: 0}
+  CameraTarget: {fileID: 1322169207}
   SmoothSpeed: 0.125
-  offset: {x: 0, y: 1.5, z: -2.5}
+  offset: {x: 0, y: 2, z: -4}
 --- !u!1001 &1171479442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -681,8 +681,13 @@ PrefabInstance:
     - target: {fileID: 136685980256629510, guid: 0187bdd962557471faee34c9b592135c,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 137044081562237050, guid: 0187bdd962557471faee34c9b592135c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6966664c834d410daa31bc4ea1863a6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0187bdd962557471faee34c9b592135c, type: 3}
 --- !u!1 &1322169204 stripped
@@ -724,21 +729,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
---- !u!114 &1322169210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322169204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37a15db849591a4f836375250ce5e2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CameraTarget: {fileID: 1322169207}
-  SmoothSpeed: 0.125
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1565653730 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1348389935115422, guid: 0187bdd962557471faee34c9b592135c,
@@ -849,7 +839,7 @@ GameObject:
   - component: {fileID: 1879139929}
   - component: {fileID: 1879139932}
   m_Layer: 0
-  m_Name: Pond
+  m_Name: Water
   m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -922,7 +912,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879139928}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1

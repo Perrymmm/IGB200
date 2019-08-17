@@ -14,11 +14,11 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void LateUpdate()
     {
-        Vector3 desiredPosition = CameraTarget.position + offset;
-        Vector3 SmoothedPosition = Vector3.Lerp(transform.position, desiredPosition, SmoothSpeed);
+        Vector3 DesiredPosition = CameraTarget.position + offset;
+        Vector3 SmoothedPosition = Vector3.Lerp(transform.position, DesiredPosition, SmoothSpeed);
 
         transform.position = SmoothedPosition;
 
-        //transform.LookAt(CameraTarget); //View 2 Option
+        transform.LookAt(CameraTarget); //View 2 Option
     }
 }
