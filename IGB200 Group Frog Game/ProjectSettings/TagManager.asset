@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Guts
   - Water
+  - Friendly
+  - Enemy
   layers:
   - Default
   - TransparentFX
