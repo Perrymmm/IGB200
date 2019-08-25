@@ -8,6 +8,9 @@ TagManager:
   - Water
   - Friendly
   - Enemy
+  - EnemyFrog
+  - Ground
+  - Fly
   layers:
   - Default
   - TransparentFX

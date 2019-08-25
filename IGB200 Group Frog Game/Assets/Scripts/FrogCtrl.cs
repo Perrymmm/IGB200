@@ -10,7 +10,6 @@ public class FrogCtrl : MonoBehaviour
 
     Animator anim;
 
-    // Start is called before the first frame update
     private void Awake()
     {
         anim = frog.GetComponent<Animator>();
@@ -25,7 +24,6 @@ public class FrogCtrl : MonoBehaviour
     //}
 
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("w"))
@@ -49,19 +47,14 @@ public class FrogCtrl : MonoBehaviour
 
 
     }
-    //NOt working ?????
-    void OnCollisionEnter(Collider col)
+    //Works but buggy
+    void OnTriggerStay(Collider col)
     {
         if (col.gameObject.tag == "Water")
         {
-            anim.Play("Swimming");
-            Debug.Log("Frog is Swimming");
+          anim.Play("Swimming");          
         }
     }
-
-
-
-
 
 }
 
