@@ -25,15 +25,14 @@ public class Enemies : MonoBehaviour
         {
             if (hpbar)
                 hpbar.hp += 10; //Doesnt work
-                score.ScoreVal += 10;
-                Destroy(collision.gameObject);
+            score.ScoreVal += 10;
+            Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.tag == "Friendly")
         {
-            score.ScoreVal += 50;
+            score.ScoreVal += 50; // Doesn't work
 
         }
-
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TeleportScript : MonoBehaviour
 {
+    public ScoreScript score;
+
     void OnTriggerEnter(Collider Col)
     {
         if(Col.gameObject.tag == "Player")
