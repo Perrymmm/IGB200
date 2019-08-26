@@ -23,7 +23,7 @@ public class Enemies : MonoBehaviour
             if (hpbar)
                 hpbar.hp += 10; //Doesnt work
                 score.ScoreVal += 10;
-                Destroy(HpFly.gameObject);
+                Destroy(collision.gameObject);
         }
 
     }

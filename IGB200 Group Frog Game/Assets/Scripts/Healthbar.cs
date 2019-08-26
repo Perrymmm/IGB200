@@ -12,13 +12,13 @@ public class Healthbar : MonoBehaviour
 
     public GameObject GameOverUI;
     public GameObject InGameUI;
+    public GameObject Frog;
 
     public void TakeDamage(int damage)
     {
         hp = hp - damage;
         Hpbar.fillAmount = hp / Starthp;
     }
-
 
     //Regen Is Bugged
     public void RegenHp(int regen)
@@ -44,6 +44,7 @@ public class Healthbar : MonoBehaviour
         {
             GameOverUI.gameObject.SetActive(true);
             InGameUI.gameObject.SetActive(false);
+            //Frog.SetActive(false); //bugged Crashes game
         }
     }
 
