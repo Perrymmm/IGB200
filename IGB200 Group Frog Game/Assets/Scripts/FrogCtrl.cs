@@ -8,6 +8,8 @@ public class FrogCtrl : MonoBehaviour
     public GameObject frog;
     public GameObject frogbody;
 
+    public Collider Expel_Collider;
+
     Animator anim;
 
     private void Awake()
@@ -38,6 +40,8 @@ public class FrogCtrl : MonoBehaviour
         if (Input.GetKeyDown("q"))
         {
             anim.Play("Tongue");
+
+//            Expel_Collider.enabled = !Expel_Collider.enabled;
         }
 
         if (Input.GetKeyDown("space"))
@@ -55,6 +59,7 @@ public class FrogCtrl : MonoBehaviour
           anim.Play("Swimming");          
         }
     }
+
 
 }
 

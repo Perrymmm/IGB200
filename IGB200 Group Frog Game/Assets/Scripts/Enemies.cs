@@ -7,7 +7,10 @@ public class Enemies : MonoBehaviour
     public Healthbar hpbar;
     public GameObject HpFly;
     public ScoreScript score;
-    
+
+    public Transform TeleportLocation;
+    public GameObject ObjectToTele;
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "EnemyFrog")
@@ -24,6 +27,12 @@ public class Enemies : MonoBehaviour
                 hpbar.hp += 10; //Doesnt work
                 score.ScoreVal += 10;
                 Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "Friendly")
+        {
+            score.ScoreVal += 50;
+
         }
 
     }
